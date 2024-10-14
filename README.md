@@ -25,5 +25,8 @@ Boxicons: Ícones vetoriais leves e personalizáveis.
 ├── img/
 │   └── (imagens usadas no portfólio)
 └── README.md           # Este arquivo
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d1287b79647b1cf1006c745f5cb58b8d9e5024a2
