@@ -103,9 +103,9 @@ section {
 
 .home-img img{
     right: 8;
-    width: 40vw;
-    width: 70%; /* Ajusta a largura da imagem a 50% do container */
-    max-width: 350px; /* Define um tamanho máximo em pixels */
+    width: 35vw;
+    width: 80%; /* Ajusta a largura da imagem a 50% do container */
+    max-width: 400px; /* Define um tamanho máximo em pixels */
     height: auto; /* Mantém a proporção da imagem */
 }
 
@@ -114,7 +114,7 @@ section {
     margin-left: auto;
     width: 35vw;
     animation: floatImagem 4s ease-in-out infinite;
-
+    padding: 5rem; /* Separa a primeira imagem */
 }
 
 @keyframes floatImagem {
@@ -211,9 +211,19 @@ span{
    background: var(--bg-color);
 }
 .about-img {
-  width: 35vw;
-
+  width: 50vw;
 }
+.about-img img{
+
+    right: 8;
+    width: 40vw;
+    width: 100%; /* Ajusta a largura da imagem a 50% do container */
+    max-width: 400px; /* Define um tamanho máximo em pixels */
+    height: auto; /* Mantém a proporção da imagem */
+    /*Classe criada para resolver o tamanho da imagem na section*/
+}
+
+
 .heading {
   text-align: center;
   font-size: 4rem;
@@ -233,6 +243,65 @@ span{
  font-size: 1.6rem;
  margin: 2rem 0 3rem;
 }
+/* Section Skill, incorporacao extra ao codigo */ 
+.skills {
+    background-color: var(--second-bg-color);
+
+}
+.skills h2{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.skills-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    grid-row-gap: 30px; /* Espaçamento entre as colunas */
+    grid-column-gap: 50px;
+    width: 100%;
+}
+.skills-main h3{
+    margin-bottom: 2.rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.skills-left, .skills-bar .info {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-left h3, .skill-right h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 15px;
+}
+
+.bar {
+    background-color: var(--bar-bg-color);
+    margin-bottom: 2.3rem;
+    height: 10px;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.bar span {
+    background-color: var(--main-color);
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    display: block;
+    left: 0;
+    border-radius: 5px;
+}
+
 .service h2 {
     margin-bottom: 5rem;
 
