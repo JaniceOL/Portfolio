@@ -256,13 +256,13 @@ span{
 
 .skills-main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    grid-row-gap: 30px; /* Espaçamento entre as colunas */
-    grid-column-gap: 50px;
+    grid-template-columns: repeat(2); /* Duas colunas */
+    grid-row-gap: 20px; /* Espaçamento entre as colunas */
+    grid-column-gap: 20px;
     width: 100%;
 }
 .skills-main h3{
-    margin-bottom: 2.rem;
+    margin-bottom: 2.3rem;
     font-size: 4rem;
     text-align: center;
 }
@@ -271,11 +271,20 @@ span{
     background-color: var(--main-bg-color);
     padding: 20px;
     border-radius: 10px;
+    justify-content: space-between;
+    position: relative;
+      
+}
+.info{
+    font-size: 2rem;
+
 }
 
 .skill-left h3, .skill-right h3 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 20px;
+    text-align: center;
+    position: relative;
 }
 
 .info {
@@ -286,7 +295,7 @@ span{
     background-color: var(--bar-bg-color);
     margin-bottom: 2.3rem;
     height: 10px;
-    width: 100%;
+    width: 50%;
     position: relative;
     margin-top: 10px;
     border-radius: 25px;
@@ -295,11 +304,41 @@ span{
 .bar span {
     background-color: var(--main-color);
     height: 100%;
-    width: 50%;
+    width: 100%;
     position: absolute;
-    display: block;
     left: 0;
-    border-radius: 5px;
+    border-radius: 25px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color); /* Efeito Neon da barra feito com sombra */
+    transition: .5s ease;
+}
+/* Percentagens de cada barra */
+.bar .html {
+    width: 40%; /* HTML tem 80% */
+    animation: html 2s;
+}
+
+.bar .css {
+    width: 50%; /* CSS tem 80% */
+    animation: css 3s;
+}
+
+.bar .javascript {
+    width: 70%; /* JavaScript tem 70% */
+    animation: javascript 4s;
+}
+.bar .Comunicacao {
+    width: 70%;
+    animation: Comunicacao 4s;
+    
+}
+.bar .Sociabilidade{
+    width: 60%;
+
+}
+.bar .Assimilacao{
+    width: 40%;
+
 }
 
 .service h2 {
@@ -642,5 +681,32 @@ color: var(--main-color);
     .footer p{
         text-align: center;
         margin-top: 2rem;
+    }
+}
+/* Animações para as barras */
+@keyframes html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%; /* Percentagem para HTML */
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%; /* Percentagem para CSS */
+    }
+}
+
+@keyframes javascript {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%; /* Percentagem para JavaScript */
     }
 }
