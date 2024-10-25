@@ -51,12 +51,22 @@ ScrollReveal().reveal('.home-content h1, about-img', { origin: "right" });
 /*--Typed JS*/
 
 const typed = new Typed(".multiple-text", {
-    strings: ["Front-End Developer", "Analista de Dados", "SEO", "Meta-ADS"],
+    strings: ["Front-End Developer", "Desenvolvedora Wordpress", "Analista de SEO", " Gestora de trafego Meta-ADS"," Gestora de trafego Google ADS"],
     typeSpeed: 100,
     backSpeed: 100, // "BackSpeed" corrigido para "backSpeed"
     backDelay: 1000, // "Backdelay" corrigido para "backDelay"
     loop: true
 });
+const downloadButton = document.getElementById('downloadButton');
 
+downloadButton.addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.href = 'Janice_Web Designer.pdf'; 
+  link.download = 'Janice_Web Designer.pdf'; 
+  link.style.display = 'none';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}); // funcao para baixar o curriculo 
 
 
