@@ -190,6 +190,7 @@ span{
 .btn {
      display: inline-block;
      padding: 1rem 2.8rem;
+     gap: 10px;
      background: var(--main-color);
      border-radius: 4rem;
      box-shadow: 0 0 1rem var(--main-color);
@@ -207,12 +208,17 @@ span{
 /* Section Skill, incorporacao extra ao codigo */ 
 .skills {
     background-color: var(--second-bg-color);
+    padding-top: 20px; /* Ajuste para reduzir o espaçamento superior */
+    padding-bottom: 20px; /* Ajuste para reduzir o espaçamento inferior */
+    margin: 0; /* Remove margens extras */
 
 }
 .skills h2{
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0; /* Reduz o espaço entre o título e o subtítulo */
+  
 }
 
 .skills-main {
@@ -221,16 +227,18 @@ span{
     grid-row-gap: 20px; /* Espaçamento entre as colunas */
     grid-column-gap: 20px;
     width: 100%;
+    padding: top 2;; /* Diminui o espaçamento superior */
 }
 .skills-main h3{
     margin-bottom: 2.3rem;
-    font-size: 4rem;
+    font-size: 2.2rem;
     text-align: center;
+    margin: 0; /* Remove margens */
 }
 
 .skills-left, .skills-bar .info {
     background-color: var(--main-bg-color);
-    padding: 20px;
+    padding: 0;
     border-radius: 10px;
     justify-content: space-between;
     position: relative;
@@ -243,7 +251,7 @@ span{
 
 .skill-left h3, .skill-right h3 {
     font-size: 4rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: center;
     position: relative;
 }
@@ -275,7 +283,7 @@ span{
 }
 /* Percentagens de cada barra */
 .bar .html {
-    width: 40%; /* HTML tem 80% */
+    width: 50%; /* HTML tem 80% */
     animation: html 2s;
 }
 
@@ -285,20 +293,20 @@ span{
 }
 
 .bar .javascript {
-    width: 70%; /* JavaScript tem 70% */
+    width: 20%; /* JavaScript tem 70% */
     animation: javascript 4s;
 }
 .bar .Comunicacao {
-    width: 70%;
+    width: 80%;
     animation: Comunicacao 4s;
     
 }
 .bar .Sociabilidade{
-    width: 60%;
+    width: 80%;
 
 }
 .bar .Assimilacao{
-    width: 40%;
+    width: 80%;
 
 }
 /* Estilos da seção "Formação" */
@@ -332,7 +340,7 @@ span{
 }
 
 .formacao-box i {
-    font-size: 7rem;
+    font-size: 3.2rem;
     color: var(--main-color);
 }
 
@@ -462,16 +470,17 @@ color: var(--main-color);
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--bg-color);
     border-radius: 50%;
 }
 .portfolio-layer a i{
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--main-color);
 }
 .portfolio-box:hover img {
     transform: scale(1.1); /* Retirado o espaço extra */
 }
+
 .portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
@@ -511,7 +520,7 @@ color: var(--main-color);
 }
 .portfolio-layer a i {
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--main-color);
 }
 .contact h2 {
     margin-bottom: 3rem;
