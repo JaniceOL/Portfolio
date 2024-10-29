@@ -27,7 +27,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     /* Espaçamento menor */
-    line-height: 1.5;
+    line-height: 1.9;
 }
 
 /* Separar corretamente a section */
@@ -345,7 +345,7 @@ span{
 }
 
 .formacao-box h3 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     margin: 1rem 0;
 }
 
@@ -404,7 +404,7 @@ color: var(--main-color);
 
 }
 .service-box p {
-   font-size: 1.6 rem;
+   font-size: 1.5rem;
    margin: 1rem 0 3rem;
 }
 .portfolio {
@@ -487,7 +487,7 @@ color: var(--main-color);
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .5), var(--bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,6 +504,23 @@ color: var(--main-color);
 
 .portfolio-layer h4 {
     font-size: 3rem;
+    
+}
+.portfolio-layer h4 {
+    color: var(--text-color); /* Cor do título */
+}
+
+.portfolio-layer p {
+    color: var(--main-color); /* Cor do parágrafo */
+}
+
+.portfolio-layer a {
+    color: #ffcc00; /* Cor do ícone/link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.portfolio-layer a:hover {
+    color: #ffaa00; /* Cor ao passar o mouse sobre o link */
 }
 .portfolio-layer p {
     font-size: 1.6rem;
@@ -515,12 +532,17 @@ color: var(--main-color);
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--main-color); /* Deixar o fundo transparente */
     border-radius: 50%;
 }
 .portfolio-layer a i {
-    font-size: 2rem;
-    color: var(--main-color);
+    font-size: 2rem; /* Tamanho do ícone */
+    color: rgba(255, 255, 255, 0.7); /* Cor branca transparente */
+    transition: color 0.3s ease; /* Transição suave para hover */
+}
+
+.portfolio-layer a:hover i {
+    color: #ffffff; /* Deixar o ícone totalmente branco no hover */
 }
 .contact h2 {
     margin-bottom: 3rem;
